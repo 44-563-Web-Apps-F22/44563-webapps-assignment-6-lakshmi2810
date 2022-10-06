@@ -19,7 +19,6 @@
 
 </form>
 
-
 <p id="result"> To store the Results </p>
 
 <script>
@@ -40,6 +39,33 @@ function checkGuess(){
         alert("Wrong Musician");
     }
 }
+
+</script>
+
+<div class="container">
+    <img src="moth.jpg" id="Image"  alt="moth insect" width="100px" height="100px" onclick="swapImage()">
+
+</div>
+<script>
+
+    var useImage=1;
+    
+    function swapImage(){
+        switch (useImage){
+            case 1:
+                document.getElementById("Image").src="moth.jpg";
+                useImage=2;
+                break;
+            case 2:
+                document.getElementById("Image").src="mf.jpg";
+                useImage=3;
+                break;
+            case 3:
+                document.getElementById("Image").src="ants.jpg";
+                useImage=1;
+                break;
+        }
+    }
 </script>
 
 
