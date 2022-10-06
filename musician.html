@@ -37,6 +37,9 @@ function checkGuess(){
         wrong++
         document.getElementById("result").innerHTML="Wrong "+wrong;
         alert("Wrong Musician");
+        if(wrong>=3){
+            showAlert();
+        }
     }
 }
 
@@ -66,7 +69,11 @@ function checkGuess(){
                 break;
         }
     }
+    function showAlert(){
+    alert("Sorry, game over.");
+}
 </script>
+
 
 
 </body>
